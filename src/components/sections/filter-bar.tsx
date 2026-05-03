@@ -1,9 +1,6 @@
-"use client"
+"use client";
 
-import type {
-  LiturgyFilter,
-  RegionFilter,
-} from "@/lib/filter-utils"
+import type { LiturgyFilter, RegionFilter } from "@/lib/filter-utils";
 
 export function FilterBar({
   searchQuery,
@@ -13,12 +10,12 @@ export function FilterBar({
   liturgy,
   onLiturgyChange,
 }: {
-  searchQuery: string
-  onSearchChange: (q: string) => void
-  region: RegionFilter
-  onRegionChange: (r: RegionFilter) => void
-  liturgy: LiturgyFilter
-  onLiturgyChange: (l: LiturgyFilter) => void
+  searchQuery: string;
+  onSearchChange: (q: string) => void;
+  region: RegionFilter;
+  onRegionChange: (r: RegionFilter) => void;
+  liturgy: LiturgyFilter;
+  onLiturgyChange: (l: LiturgyFilter) => void;
 }) {
   const regionBtns: { key: RegionFilter; label: string }[] = [
     { key: "all", label: "Semua" },
@@ -26,27 +23,26 @@ export function FilterBar({
     { key: "kabupaten", label: "Kab. Malang" },
     { key: "tinggi", label: "✅ Data Valid" },
     { key: "perludicek", label: "⚠️ Perlu Dicek" },
-  ]
+  ];
 
-  const liturgyBtns: { key: LiturgyFilter; label: string; title?: string }[] =
-    [
-      { key: "all", label: "Semua jam", title: "Tampilkan semua jadwal" },
-      {
-        key: "sabtu_sore",
-        label: "Sabtu sore",
-        title: "Misa Sabtu mulai 16.00 WIB atau sesudahnya",
-      },
-      {
-        key: "minggu_pagi",
-        label: "Minggu pagi",
-        title: "Misa Minggu sebelum 11.00 WIB",
-      },
-      {
-        key: "minggu_sore",
-        label: "Minggu sore",
-        title: "Misa Minggu mulai 15.00 WIB atau sesudahnya",
-      },
-    ]
+  const liturgyBtns: { key: LiturgyFilter; label: string; title?: string }[] = [
+    { key: "all", label: "Semua jam", title: "Tampilkan semua jadwal" },
+    {
+      key: "sabtu_sore",
+      label: "Sabtu sore",
+      title: "Misa Sabtu mulai 16.00 WIB atau sesudahnya",
+    },
+    {
+      key: "minggu_pagi",
+      label: "Minggu pagi",
+      title: "Misa Minggu sebelum 11.00 WIB",
+    },
+    {
+      key: "minggu_sore",
+      label: "Minggu sore",
+      title: "Misa Minggu mulai 15.00 WIB atau sesudahnya",
+    },
+  ];
 
   return (
     <div className="mb-4 flex flex-col gap-3">
@@ -70,7 +66,7 @@ export function FilterBar({
           placeholder="Cari nama gereja, lokasi…"
           autoComplete="off"
           enterKeyHint="search"
-          className="w-full rounded-xl border border-black/8 bg-white py-2.5 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none ring-accent/30 placeholder:text-misa-400 focus:border-accent focus:ring-2"
+          className="w-full rounded-xl border border-black/8 bg-surface py-2.5 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none ring-accent/30 placeholder:text-misa-400 focus:border-accent focus:ring-2"
         />
       </div>
 
@@ -119,5 +115,5 @@ export function FilterBar({
         </div>
       </div>
     </div>
-  )
+  );
 }

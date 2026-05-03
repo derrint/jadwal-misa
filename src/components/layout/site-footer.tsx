@@ -1,14 +1,15 @@
-import { FooterPageUpdatedTime } from "@/components/layout/page-updated-client"
+import { FooterPageUpdatedTime } from "@/components/layout/page-updated-client";
 
 export function SiteFooterCity() {
   return (
     <footer className="relative z-10 border-t border-black/8 px-4 py-6 text-center text-[0.72rem] leading-relaxed text-misa-500">
-      Data diambil dari website resmi paroki, Instagram resmi, dan sumber terverifikasi
+      Data diambil dari website resmi paroki, Instagram resmi, dan sumber
+      terverifikasi
       <br />
       Keuskupan Malang · Data diambil per tanggal <FooterPageUpdatedTime /> ·
       Untuk keperluan informasi pribadi
     </footer>
-  )
+  );
 }
 
 export function SiteFooterHome() {
@@ -17,5 +18,5 @@ export function SiteFooterHome() {
       Jadwal Misa Indonesia · Direktori jadwal misa Katolik ·{" "}
       <FooterPageUpdatedTime />
     </footer>
-  )
+  );
 }

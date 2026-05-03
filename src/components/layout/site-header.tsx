@@ -1,8 +1,8 @@
 export type SiteHeaderProps = {
-  title: React.ReactNode
-  subtitle?: string
-  meta?: React.ReactNode
-}
+  title: React.ReactNode;
+  subtitle?: string;
+  meta?: React.ReactNode;
+};
 
 export function SiteHeader({ title, subtitle, meta }: SiteHeaderProps) {
   return (
@@ -10,7 +10,7 @@ export function SiteHeader({ title, subtitle, meta }: SiteHeaderProps) {
       <div className="cross-icon mb-3 inline-flex items-center justify-center text-3xl text-accent drop-shadow-sm">
         ✝
       </div>
-      <h1 className="font-sans text-[clamp(1.6rem,5vw,2.25rem)] font-bold tracking-tight text-misa-800">
+      <h1 className="font-serif text-[clamp(1.6rem,5vw,2.25rem)] font-bold tracking-tight text-misa-800">
         {title}
       </h1>
       {subtitle ? (
@@ -22,5 +22,5 @@ export function SiteHeader({ title, subtitle, meta }: SiteHeaderProps) {
         <div className="mt-5 flex flex-wrap justify-center gap-4">{meta}</div>
       ) : null}
     </header>
-  )
+  );
 }

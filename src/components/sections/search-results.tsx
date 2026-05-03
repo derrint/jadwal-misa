@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { useMemo, useState } from "react"
-import Link from "next/link"
-import type { SearchEntry } from "@/types/parish"
-import { previewMinggu, previewSabtu } from "@/lib/filter-utils"
-import { SchedPill } from "@/components/ui/sched-pill"
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import type { SearchEntry } from "@/types/parish";
+import { previewMinggu, previewSabtu } from "@/lib/filter-utils";
+import { SchedPill } from "@/components/ui/sched-pill";
 
 function matchesEntry(q: string, e: SearchEntry): boolean {
-  const query = q.toLowerCase().trim()
-  if (!query) return true
-  const blob = `${e.search} ${e.cardName} ${e.cardParoki} ${e.location} ${e.cityName}`
-    .toLowerCase()
-  return blob.includes(query)
+  const query = q.toLowerCase().trim();
+  if (!query) return true;
+  const blob =
+    `${e.search} ${e.cardName} ${e.cardParoki} ${e.location} ${e.cityName}`.toLowerCase();
+  return blob.includes(query);
 }
 
 export function SearchResults({ searchIndex }: { searchIndex: SearchEntry[] }) {
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
-    return searchIndex.filter((e) => matchesEntry(query, e))
-  }, [searchIndex, query])
+    return searchIndex.filter((e) => matchesEntry(query, e));
+  }, [searchIndex, query]);
 
   return (
     <section className="mb-10">
@@ -42,14 +42,14 @@ export function SearchResults({ searchIndex }: { searchIndex: SearchEntry[] }) {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Cari paroki di seluruh kota…"
           autoComplete="off"
-          className="w-full rounded-xl border border-black/8 bg-white py-3 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none placeholder:text-misa-400 focus:border-accent focus:ring-2 focus:ring-accent/25"
+          className="w-full rounded-xl border border-black/8 bg-surface py-3 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none placeholder:text-misa-400 focus:border-accent focus:ring-2 focus:ring-accent/25"
         />
       </div>
 
       {query.trim() ? (
         <ul className="mt-4 space-y-2">
           {filtered.length === 0 ? (
-            <li className="rounded-xl border border-black/8 bg-white p-6 text-center text-sm text-misa-500">
+            <li className="rounded-xl border border-black/8 bg-surface p-6 text-center text-sm text-misa-500">
               Tidak ada hasil.
             </li>
           ) : (
@@ -57,11 +57,13 @@ export function SearchResults({ searchIndex }: { searchIndex: SearchEntry[] }) {
               <li key={`${e.cityId}-${e.id}`}>
                 <Link
                   href={`/${e.cityId}#card-${e.id}`}
-                  className="block rounded-xl border border-black/8 bg-white p-4 shadow-[var(--shadow-card)] transition-all hover:border-accent/30 hover:shadow-[var(--shadow-hover)]"
+                  className="block rounded-xl border border-black/8 bg-surface p-4 shadow-[var(--shadow-card)] transition-all hover:border-accent/30 hover:shadow-[var(--shadow-hover)]"
                 >
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
-                      <p className="font-semibold text-misa-900">{e.cardName}</p>
+                      <p className="font-semibold text-misa-900">
+                        {e.cardName}
+                      </p>
                       <p className="text-sm text-accent">{e.cardParoki}</p>
                       <p className="mt-1 text-xs text-misa-500">{e.cityName}</p>
                     </div>
@@ -77,5 +79,5 @@ export function SearchResults({ searchIndex }: { searchIndex: SearchEntry[] }) {
         </ul>
       ) : null}
     </section>
-  )
+  );
 }

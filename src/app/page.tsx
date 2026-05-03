@@ -1,13 +1,13 @@
-import Link from "next/link"
-import cityIndex from "@/data/index.json"
-import { buildSearchIndex } from "@/lib/build-search-index"
-import { SiteHeader } from "@/components/layout/site-header"
-import { SiteFooterHome } from "@/components/layout/site-footer"
-import { CityCard } from "@/components/ui/city-card"
-import { SearchResults } from "@/components/sections/search-results"
+import Link from "next/link";
+import cityIndex from "@/data/index.json";
+import { buildSearchIndex } from "@/lib/build-search-index";
+import { SiteHeader } from "@/components/layout/site-header";
+import { SiteFooterHome } from "@/components/layout/site-footer";
+import { CityCard } from "@/components/ui/city-card";
+import { SearchResults } from "@/components/sections/search-results";
 
 export default async function Home() {
-  const searchIndex = await buildSearchIndex()
+  const searchIndex = await buildSearchIndex();
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -29,7 +29,9 @@ export default async function Home() {
 
           <SearchResults searchIndex={searchIndex} />
 
-          <h2 className="mb-4 text-lg font-bold text-misa-900">Wilayah</h2>
+          <h2 className="mb-4 font-serif text-lg font-bold text-misa-900">
+            Wilayah
+          </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {cityIndex.cities.map((c) => (
               <CityCard key={c.id} city={c} />
@@ -49,5 +51,5 @@ export default async function Home() {
 
       <SiteFooterHome />
     </div>
-  )
+  );
 }

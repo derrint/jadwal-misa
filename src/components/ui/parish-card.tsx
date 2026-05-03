@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import type { Parish } from "@/types/parish"
-import { previewMinggu, previewSabtu } from "@/lib/filter-utils"
-import { SchedPill } from "@/components/ui/sched-pill"
-import { TrustBadge } from "@/components/ui/trust-badge"
+import { useState } from "react";
+import type { Parish } from "@/types/parish";
+import { previewMinggu, previewSabtu } from "@/lib/filter-utils";
+import { SchedPill } from "@/components/ui/sched-pill";
+import { TrustBadge } from "@/components/ui/trust-badge";
 
 function TimeRow({ children }: { children: React.ReactNode }) {
   return (
@@ -12,50 +12,42 @@ function TimeRow({ children }: { children: React.ReactNode }) {
       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
       {children}
     </div>
-  )
+  );
 }
 
 function buildSabtuLines(p: Parish): React.ReactNode[] {
   if (p.sabtuDetail?.length) {
-    return p.sabtuDetail.map((line, i) => (
-      <TimeRow key={i}>{line}</TimeRow>
-    ))
+    return p.sabtuDetail.map((line, i) => <TimeRow key={i}>{line}</TimeRow>);
   }
   if (!p.sabtu?.length) {
-    return [<TimeRow key="empty">—</TimeRow>]
+    return [<TimeRow key="empty">—</TimeRow>];
   }
   return p.sabtu.map((t, i) => (
-    <TimeRow key={i}>
-      {t.replace(/\./g, ":")} WIB
-    </TimeRow>
-  ))
+    <TimeRow key={i}>{t.replace(/\./g, ":")} WIB</TimeRow>
+  ));
 }
 
 function buildMingguLines(p: Parish): React.ReactNode[] {
   if (p.mingguDetail?.length) {
-    return p.mingguDetail.map((line, i) => (
-      <TimeRow key={i}>{line}</TimeRow>
-    ))
+    return p.mingguDetail.map((line, i) => <TimeRow key={i}>{line}</TimeRow>);
   }
   if (!p.minggu?.length) {
-    return [<TimeRow key="empty">—</TimeRow>]
+    return [<TimeRow key="empty">—</TimeRow>];
   }
   return p.minggu.map((t, i) => (
-    <TimeRow key={i}>
-      {t.replace(/\./g, ":")} WIB
-    </TimeRow>
-  ))
+    <TimeRow key={i}>{t.replace(/\./g, ":")} WIB</TimeRow>
+  ));
 }
 
 export function ParishCard({ parish: p }: { parish: Parish }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const noteClass =
     p.noteSkin === "warn"
       ? "note-box note-box--warn"
       : p.noteSkin === "danger"
         ? "note-box note-box--danger"
-        : "note-box"
+        : "note-box";
 
   return (
     <article
@@ -75,7 +67,7 @@ export function ParishCard({ parish: p }: { parish: Parish }) {
             ⛪
           </div>
           <div className="min-w-0 flex-1">
-            <h2 className="font-sans text-[0.98rem] font-semibold leading-snug text-misa-900">
+            <h2 className="font-serif text-[0.98rem] font-semibold leading-snug text-misa-900">
               {p.cardName}
             </h2>
             <p className="mt-0.5 text-[0.72rem] font-medium tracking-wide text-accent">
@@ -152,5 +144,5 @@ export function ParishCard({ parish: p }: { parish: Parish }) {
         </div>
       </div>
     </article>
-  )
+  );
 }

@@ -1,41 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  /* Warm neutral palette */
-  --color-misa-50: #f2ede8;
-  --color-misa-100: #e8e1d8;
-  --color-misa-200: #d4c9bc;
-  --color-misa-300: #b8a99a;
-  --color-misa-400: #9e8e7e;
-  --color-misa-500: #6b5f58;
-  --color-misa-600: #4a3f39;
-  --color-misa-700: #3d3530;
-  --color-misa-800: #1a1714;
-  --color-misa-900: #0f0c09;
+  /* Kertas & Ink — body / headings */
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
 
-  /* Accent */
-  --color-accent: #e05a2b;
-  --color-accent-soft: #f2915e;
-  --color-accent-xsoft: color-mix(in srgb, #e05a2b 10%, transparent);
+  /* Paper → ink neutrals */
+  --color-misa-50: #faf8f5;
+  --color-misa-100: #f3efe9;
+  --color-misa-200: #e5ddd4;
+  --color-misa-300: #c9bfb4;
+  --color-misa-400: #9a9188;
+  --color-misa-500: #6b6560;
+  --color-misa-600: #4a4541;
+  --color-misa-700: #3a3632;
+  --color-misa-800: #2c2825;
+  --color-misa-900: #1c1a18;
+
+  /* Burgundy accent */
+  --color-accent: #6b2d3c;
+  --color-accent-soft: #8f4a5a;
+  --color-accent-xsoft: color-mix(in srgb, #6b2d3c 10%, transparent);
 
   /* Status */
-  --color-trust-high: #1a9e6a;
-  --color-trust-med: #c68b00;
-  --color-trust-low: #d63b3b;
+  --color-trust-high: #1a7a56;
+  --color-trust-med: #a67c00;
+  --color-trust-low: #b83232;
 
   /* Surfaces */
-  --color-surface: #ffffff;
-  --color-surface-2: #f7f4f1;
+  --color-surface: #fffcf7;
+  --color-surface-2: #f7f3ed;
 
-  /* Radii */
-  --radius-card: 18px;
+  /* Radii — editorial card */
+  --radius-card: 14px;
   --radius-sm: 10px;
 
-  /* Shadows */
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06),
-    0 1px 3px rgba(0, 0, 0, 0.04);
-  --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.1),
-    0 2px 6px rgba(0, 0, 0, 0.05);
+  /* Shadows — warm paper lift */
+  --shadow-card: 0 1px 10px rgba(44, 40, 37, 0.07),
+    0 1px 2px rgba(44, 40, 37, 0.05);
+  --shadow-hover: 0 10px 28px rgba(44, 40, 37, 0.1),
+    0 2px 8px rgba(44, 40, 37, 0.06);
 }
 
 :root {
@@ -44,11 +48,11 @@
 
 html,
 body {
-  @apply bg-misa-50 text-misa-700 antialiased;
+  @apply bg-misa-50 text-misa-800;
 }
 
 ::selection {
-  @apply bg-accent text-white;
+  @apply bg-accent/85 text-white;
 }
 
 @layer components {
@@ -57,7 +61,7 @@ body {
   }
 
   .card-parish {
-    @apply rounded-[18px] border border-black/8 bg-white shadow-[var(--shadow-card)]
+    @apply rounded-[var(--radius-card)] border border-black/8 bg-surface shadow-[var(--shadow-card)]
            transition-all duration-200;
   }
 
@@ -66,7 +70,7 @@ body {
   }
 
   .filter-btn-base {
-    @apply rounded-lg border border-black/8 bg-white px-3 py-1.5 text-xs
+    @apply rounded-lg border border-black/8 bg-surface px-3 py-1.5 text-xs
            font-semibold text-misa-500 shadow-[var(--shadow-card)]
            transition-all duration-150 whitespace-nowrap cursor-pointer;
   }
@@ -76,7 +80,7 @@ body {
   }
 
   .filter-btn-active {
-    @apply bg-accent border-accent text-white shadow-[0_3px_10px_rgba(224,90,43,0.25)];
+    @apply bg-accent border-accent text-white shadow-[0_3px_10px_rgba(107,45,60,0.28)];
   }
 
   .trust-badge-high {
@@ -123,7 +127,7 @@ body {
   }
 
   .info-panel-site {
-    @apply rounded-xl border border-black/8 border-l-[3px] border-l-accent bg-white p-4 mt-8 text-sm text-misa-600 leading-relaxed;
+    @apply rounded-xl border border-black/8 border-l-[3px] border-l-accent bg-surface p-4 mt-8 text-sm text-misa-600 leading-relaxed;
   }
 
   .info-panel-site h3 {

@@ -1,33 +1,33 @@
-"use client"
+"use client";
 
-import { useEffect, useMemo, useState } from "react"
-import type { CityData, CityMeta } from "@/types/parish"
+import { useEffect, useMemo, useState } from "react";
+import type { CityData, CityMeta } from "@/types/parish";
 import {
   matchesLiturgy,
   matchesRegion,
   matchesSearch,
   type LiturgyFilter,
   type RegionFilter,
-} from "@/lib/filter-utils"
-import { CityHero } from "@/components/sections/city-hero"
-import { FilterBar } from "@/components/sections/filter-bar"
-import { ParishList } from "@/components/sections/parish-list"
-import { InfoPageUpdatedTime } from "@/components/layout/page-updated-client"
-import { SiteFooterCity } from "@/components/layout/site-footer"
+} from "@/lib/filter-utils";
+import { CityHero } from "@/components/sections/city-hero";
+import { FilterBar } from "@/components/sections/filter-bar";
+import { ParishList } from "@/components/sections/parish-list";
+import { InfoPageUpdatedTime } from "@/components/layout/page-updated-client";
+import { SiteFooterCity } from "@/components/layout/site-footer";
 
 export default function CityPageClient({
   data,
   meta,
 }: {
-  data: CityData
-  meta: CityMeta
+  data: CityData;
+  meta: CityMeta;
 }) {
-  const [region, setRegion] = useState<RegionFilter>("all")
-  const [liturgy, setLiturgy] = useState<LiturgyFilter>("all")
-  const [searchQuery, setSearchQuery] = useState("")
+  const [region, setRegion] = useState<RegionFilter>("all");
+  const [liturgy, setLiturgy] = useState<LiturgyFilter>("all");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const parishes = data.parishes
-  const parishCount = parishes.filter((p) => p.id).length
+  const parishes = data.parishes;
+  const parishCount = parishes.filter((p) => p.id).length;
 
   const visible = useMemo(
     () =>
@@ -39,30 +39,30 @@ export default function CityPageClient({
           matchesSearch(p, searchQuery),
       ),
     [parishes, region, liturgy, searchQuery],
-  )
+  );
 
   const visibleIds = useMemo(
     () => new Set(visible.map((p) => p.id)),
     [visible],
-  )
+  );
 
   useEffect(() => {
-    const hash = window.location.hash
-    if (!hash.startsWith("#card-")) return
-    const id = hash.slice(1)
+    const hash = window.location.hash;
+    if (!hash.startsWith("#card-")) return;
+    const id = hash.slice(1);
     requestAnimationFrame(() => {
       document.getElementById(id)?.scrollIntoView({
         behavior: "smooth",
         block: "start",
-      })
-    })
-  }, [])
+      });
+    });
+  }, []);
 
-  const visibleCount = visible.length
+  const visibleCount = visible.length;
   const countLine =
     visibleCount === parishCount
       ? ""
-      : `Menampilkan ${visibleCount} dari ${parishCount} paroki`
+      : `Menampilkan ${visibleCount} dari ${parishCount} paroki`;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -86,7 +86,7 @@ export default function CityPageClient({
           ) : null}
 
           {visibleCount === 0 ? (
-            <div className="rounded-xl border border-black/8 bg-white py-12 text-center text-misa-500 shadow-[var(--shadow-card)]">
+            <div className="rounded-xl border border-black/8 bg-surface py-12 text-center text-misa-500 shadow-[var(--shadow-card)]">
               <div className="mb-2 text-3xl" aria-hidden>
                 🔍
               </div>
@@ -100,13 +100,13 @@ export default function CityPageClient({
             <h3>📌 Panduan &amp; Catatan Penting</h3>
             <ul>
               <li>
-                Jadwal ini berlaku untuk <strong>misa reguler</strong>. Pada Hari
-                Raya Besar (Natal, Paskah, dll.) jadwal biasanya berubah —
+                Jadwal ini berlaku untuk <strong>misa reguler</strong>. Pada
+                Hari Raya Besar (Natal, Paskah, dll.) jadwal biasanya berubah —
                 selalu cek website/IG resmi.
               </li>
               <li>
-                Jadwal bisa berubah sewaktu-waktu karena acara paroki,
-                renovasi, atau kondisi khusus.
+                Jadwal bisa berubah sewaktu-waktu karena acara paroki, renovasi,
+                atau kondisi khusus.
               </li>
               <li>
                 Data diverifikasi dari sumber resmi paroki per{" "}
@@ -126,5 +126,5 @@ export default function CityPageClient({
 
       <SiteFooterCity />
     </div>
-  )
+  );
 }
