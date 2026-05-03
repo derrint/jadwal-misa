@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "title": "Jadwal Misa Malang Raya",
+  "parishes": [
+    {
+      "sectionLabel": "🏛 Kota Malang — Dekenat I",
+      "id": "ijen",
+      "wilayah": "kota",
+      "trust": "tinggi",
+      "search": "ijen katedral spmgk santa perawan maria gunung karmel buring klojen",
+      "cardName": "Gereja Katedral Ijen",
+      "cardParoki": "Paroki SPMGK (Ijen)",
+      "location": "📍 Jl. Buring No. 60, Klojen",
+      "sabtu": [
+        "16.30",
+        "18.30"
+      ],
+      "minggu": [
+        "05.30",
+        "07.30",
+        "16.30",
+        "18.30"
+      ],
+      "noteHtml": "<strong>Kapel:</strong> Kapel Sengkaling (Sabtu 17.00) · Kapel Landungsari (Sabtu 18.00)<br><strong>Misa Harian:</strong> 05.30 WIB setiap hari<br><strong>Kontak:</strong> (0341) 362524",
+      "sources": [
+        "🌐 parokiijenmalang.my.id",
+        "📷 @parokiijen"
+      ]
+    },
+    {
+      "id": "langsep",
+      "wilayah": "kota",
+      "trust": "tinggi",
+      "search": "langsep vincentius paulo ananas sukun pisang candi",
+      "cardName": "Gereja St. Vincentius A Paulo",
+      "cardParoki": "Paroki Langsep",
+      "location": "📍 Jl. Ananas No. 41, Sukun",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "06.00",
+        "08.00",
+        "17.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> 05.30 WIB setiap hari<br><strong>Misa Penyembuhan:</strong> Diadakan setiap bulan (konfirmasi ke paroki)<br><strong>Kontak:</strong> (0341) 561336",
+      "sources": [
+        "🌐 parokilangsep.org",
+        "📷 @parokilangsep_malang"
+      ]
+    },
+    {
+      "id": "tidar",
+      "wilayah": "kota",
+      "trust": "tinggi",
+      "search": "tidar andreas puncak esberg dau karangwidoro",
+      "cardName": "Gereja St. Andreas",
+      "cardParoki": "Paroki Tidar",
+      "location": "📍 Jl. Puncak Esberg No. 22, Dau",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "06.30",
+        "09.00",
+        "17.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> 05.30 WIB · <strong>Jalan Salib Jumat:</strong> 17.00 (dilanjut misa)<br><strong>Ordo:</strong> Karmel (O.Carm)<br><strong>Website:</strong> parokitidarmalang.org",
+      "sources": [
+        "🌐 parokitidarmalang.org",
+        "🗓 Update: Maret 2026"
+      ]
+    },
+    {
+      "sectionLabel": "🏙 Kota Malang — Dekenat II",
+      "id": "blimbing",
+      "wilayah": "kota",
+      "trust": "tinggi",
+      "search": "blimbing albertus trapani yani ahmad",
+      "cardName": "Gereja St. Albertus de Trapani",
+      "cardParoki": "Paroki Blimbing",
+      "location": "📍 Jl. A. Yani No. 22, Blimbing",
+      "sabtu": [
+        "17.00",
+        "19.00"
+      ],
+      "minggu": [
+        "06.00",
+        "08.00",
+        "17.00",
+        "19.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> 05.30 & 19.00 WIB · <strong>Jumat Pertama:</strong> 18.00 WIB<br><strong>Kapel Kolese St. Yusuf:</strong> Sabtu Minggu pagi 07.00 (Mojolangu)<br><strong>Kontak:</strong> (0341) 491842",
+      "sources": [
+        "🌐 parokiblimbing.org",
+        "📷 @parokiblimbing"
+      ]
+    },
+    {
+      "id": "kayutangan",
+      "wilayah": "kota",
+      "trust": "tinggi",
+      "search": "kayutangan hati kudus yesus sugiyopranoto klojen kiduldalem",
+      "cardName": "Gereja Hati Kudus Yesus",
+      "cardParoki": "Paroki Kayutangan",
+      "location": "📍 Jl. MGR Sugiyopranoto No. 2, Klojen",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "07.00",
+        "09.00",
+        "17.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> Senin–Kamis 12.00, Jumat 11.30 · <strong>Ordo:</strong> Karmel (O.Carm)<br><strong>Gereja Neo-Gothic tertua di Malang</strong> (berdiri 1897, bangunan 1905)<br><strong>Kontak:</strong> (0341) 323938",
+      "sources": [
+        "🌐 hkykayutangan.org",
+        "📷 @hky.kayutangan"
+      ]
+    },
+    {
+      "id": "kesatrian",
+      "wilayah": "kota",
+      "trust": "sedang",
+      "search": "kesatrian ratu rosari plongkowati blimbing",
+      "cardName": "Gereja Maria Ratu Rosari",
+      "cardParoki": "Paroki Kesatrian",
+      "location": "📍 Jl. Plongkowati No. 2, Blimbing",
+      "sabtu": [
+        "16.30"
+      ],
+      "minggu": [
+        "06.00",
+        "08.00",
+        "16.30"
+      ],
+      "noteSkin": "warn",
+      "noteHtml": "⚠️ <strong>Perlu dicek ulang.</strong> Data dari agregator, belum ada website/IG resmi yang terverifikasi.<br><strong>Kontak:</strong> (0341) 366371",
+      "sources": [
+        "🗃 jadwalmisa.id (agregator)"
+      ]
+    },
+    {
+      "id": "janti",
+      "wilayah": "kota",
+      "trust": "sedang",
+      "search": "janti yohanes pemandi keben surya timur kedungkandang",
+      "cardName": "Gereja St. Yohanes Pemandi",
+      "cardParoki": "Paroki Janti",
+      "location": "📍 Jl. Keben II Surya Timur No. 9-10, Kedungkandang",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "06.00",
+        "08.00"
+      ],
+      "noteSkin": "warn",
+      "noteHtml": "⚠️ <strong>Perlu dicek ulang.</strong> Data dari agregator, belum ada konfirmasi dari sumber resmi 2026.<br><strong>Kontak:</strong> (0341) 800441",
+      "sources": [
+        "🗃 jadwalmisa.id (agregator)"
+      ]
+    },
+    {
+      "id": "lely",
+      "wilayah": "kota",
+      "trust": "sedang",
+      "search": "lely maria diangkat surga celaket bunga lely lowokwaru",
+      "cardName": "Gereja Maria Diangkat Ke Surga",
+      "cardParoki": "Paroki Lely (Celaket)",
+      "location": "📍 Jl. Bunga Lely No. 17-19, Lowokwaru",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "06.00",
+        "08.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> Senin, Selasa, Rabu, Jumat 17.30 · Kamis 05.30<br><strong>Gereja Cor Jesu</strong> (area paroki): Sabtu 17.00 · Minggu 06.00, 08.00, 17.00<br><strong>IG:</strong> @mdks_lelycelaket",
+      "sources": [
+        "🌐 parokimdkslely.org",
+        "📷 @mdks_lelycelaket"
+      ]
+    },
+    {
+      "sectionLabel": "🌿 Kabupaten Malang — Dekenat Utara",
+      "id": "lawang",
+      "wilayah": "kabupaten",
+      "trust": "sedang",
+      "search": "lawang santa maria tak bernoda gereja jago stasiun",
+      "cardName": "Gereja Santa Maria Tak Bernoda",
+      "cardParoki": "Paroki Lawang",
+      "location": "📍 Area Stasiun Lawang, Kab. Malang",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "07.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> Senin–Kamis 05.30 · <strong>Jumat Pertama:</strong> 17.00<br><strong>Gereja tertua ketiga</strong> Keuskupan Malang (dibangun 1918) — dikenal sebagai \"Gereja Jago\"<br><strong>Facebook:</strong> paroki.lawang",
+      "sources": [
+        "🗃 jadwalmisa.id + Google Maps"
+      ]
+    },
+    {
+      "id": "singosari",
+      "wilayah": "kabupaten",
+      "trust": "tinggi",
+      "search": "singosari yohanes maria vianney tni au",
+      "cardName": "Gereja St. Yohanes Maria Vianney",
+      "cardParoki": "Paroki Singosari",
+      "location": "📍 Area TNI AU Singosari, Kab. Malang",
+      "sabtuDetail": [
+        "06.00 WIB (harian)",
+        "17.00 WIB (mingguan)"
+      ],
+      "sabtu": [
+        "06.00",
+        "17.00"
+      ],
+      "minggu": [
+        "08.00"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> Senin–Jumat 18.00, Sabtu 06.00<br><strong>IG:</strong> @parokisingosari (aktif 2025)",
+      "sources": [
+        "📷 @parokisingosari",
+        "🗃 jadwalmisa.id"
+      ]
+    },
+    {
+      "id": "tumpang",
+      "wilayah": "kabupaten",
+      "trust": "sedang",
+      "search": "tumpang maria diangkat ke surga raya tumpang",
+      "cardName": "Gereja Santa Maria Diangkat Ke Surga",
+      "cardParoki": "Paroki Tumpang",
+      "location": "📍 Jl. Raya Tumpang, Kec. Tumpang",
+      "sabtu": [
+        "17.00"
+      ],
+      "minggu": [
+        "08.00"
+      ],
+      "noteSkin": "warn",
+      "noteHtml": "<strong>Jumat Pertama:</strong> 18.00 WIB<br>⚠️ Data dari agregator — disarankan konfirmasi langsung ke paroki sebelum hadir.",
+      "sources": [
+        "🗃 jadwalmisa.id (agregator)"
+      ]
+    },
+    {
+      "sectionLabel": "🌾 Kabupaten Malang — Dekenat Selatan",
+      "id": "kepanjen",
+      "wilayah": "kabupaten",
+      "trust": "sedang",
+      "search": "kepanjen santa maria tak bernoda kawi banurejo",
+      "cardName": "Gereja Santa Maria Tak Bernoda",
+      "cardParoki": "Paroki Kepanjen",
+      "location": "📍 Jl. Kawi No. 21, Kepanjen",
+      "sabtu": [
+        "18.00"
+      ],
+      "minggu": [
+        "06.30"
+      ],
+      "noteSkin": "warn",
+      "noteHtml": "<strong>Jumat Pertama:</strong> 17.30 WIB<br>⚠️ Website paroki ada tapi jadwal misa tidak tampil eksplisit. Disarankan konfirmasi langsung.",
+      "sources": [
+        "🗃 jadwalmisa.id (agregator)"
+      ]
+    },
+    {
+      "id": "purworejo",
+      "wilayah": "kabupaten",
+      "trust": "tinggi",
+      "search": "purworejo santa perawan maria ratu damai gondanglegi",
+      "cardName": "Gereja Santa Perawan Maria",
+      "cardParoki": "Paroki Purworejo (Maria Ratu Damai)",
+      "location": "📍 Jl. Raya Purworejo, area Gondanglegi",
+      "sabtu": [
+        "18.00"
+      ],
+      "minggu": [
+        "07.00",
+        "18.00"
+      ],
+      "mingguDetail": [
+        "07.00 WIB",
+        "18.00 WIB ✦ Bahasa Jawa (Minggu I)"
+      ],
+      "noteHtml": "<strong>Misa Harian:</strong> Senin 05.30 (di gereja) · Selasa–Kamis 05.30 (di stasi)<br><strong>Jumat Pertama:</strong> 17.00 WIB<br>Misa Minggu sore pertama setiap bulan menggunakan <strong>bahasa Jawa</strong>.",
+      "sources": [
+        "🌐 spmariapwr.org",
+        "✅ Terverifikasi"
+      ]
+    },
+    {
+      "id": "lodalem",
+      "wilayah": "kabupaten",
+      "trust": "rendah",
+      "search": "lodalem maria annuntiata trisula arjowilangun kalipare",
+      "cardName": "Gereja Maria Annuntiata",
+      "cardParoki": "Paroki Lodalem",
+      "location": "📍 Jl. Trisula No. 57, Arjowilangun, Kalipare",
+      "noSchedule": true,
+      "schedulePreviewSabtu": "—",
+      "schedulePreviewMinggu": "Data tidak tersedia",
+      "sabtu": [],
+      "minggu": [],
+      "noteSkin": "danger",
+      "noteHtml": "❓ <strong>Data tidak tersedia secara online.</strong><br>Paroki ini berlokasi di Malang Selatan (Kalipare) — wilayah terpencil dengan kehadiran digital yang sangat terbatas.<br><br><strong>Sangat disarankan:</strong> Hubungi langsung ke (0341) 379629 untuk konfirmasi jadwal misa terbaru.",
+      "sources": [
+        "📋 Terdaftar di Keuskupan Malang"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "cities": [
+    {
+      "id": "malang",
+      "name": "Malang Raya",
+      "province": "Jawa Timur",
+      "diocese": "Keuskupan Malang",
+      "description": "Kota Malang & Kabupaten Malang",
+      "parishCount": 14,
+      "file": "malang.json"
+    }
+  ]
+}
