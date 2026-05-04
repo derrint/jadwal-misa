@@ -22,14 +22,14 @@ export default async function Home() {
 
       <main className="relative z-10 flex-1">
         <div className="container-site py-8">
-          <p className="mb-6 text-center text-sm leading-relaxed text-misa-600">
+          <p className="mb-6 text-center text-sm leading-relaxed text-misa-600 sm:text-base">
             Cari paroki lintas kota atau pilih wilayah di bawah untuk melihat
             jadwal lengkap.
           </p>
 
           <SearchResults searchIndex={searchIndex} />
 
-          <h2 className="mb-4 font-serif text-lg font-bold text-misa-900">
+          <h2 className="mb-4 font-serif text-lg font-bold text-misa-900 sm:text-xl">
             Wilayah
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -38,7 +38,7 @@ export default async function Home() {
             ))}
           </div>
 
-          <p className="mt-10 text-center text-sm text-misa-500">
+          <p className="mt-10 text-center text-sm text-misa-500 sm:text-base">
             Punya koreksi jadwal? Hubungi paroki masing-masing atau kontributor
             lokal.{" "}
             <Link href="/malang" className="font-medium text-accent underline">

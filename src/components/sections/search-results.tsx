@@ -42,14 +42,14 @@ export function SearchResults({ searchIndex }: { searchIndex: SearchEntry[] }) {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Cari paroki di seluruh kota…"
           autoComplete="off"
-          className="w-full rounded-xl border border-black/8 bg-surface py-3 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none placeholder:text-misa-400 focus:border-accent focus:ring-2 focus:ring-accent/25"
+          className="w-full rounded-xl border border-black/8 bg-surface py-3 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none placeholder:text-misa-400 focus:border-accent focus:ring-2 focus:ring-accent/25 sm:text-base"
         />
       </div>
 
       {query.trim() ? (
         <ul className="mt-4 space-y-2">
           {filtered.length === 0 ? (
-            <li className="rounded-xl border border-black/8 bg-surface p-6 text-center text-sm text-misa-500">
+            <li className="rounded-xl border border-black/8 bg-surface p-6 text-center text-sm text-misa-500 sm:text-base">
               Tidak ada hasil.
             </li>
           ) : (
@@ -61,11 +61,11 @@ export function SearchResults({ searchIndex }: { searchIndex: SearchEntry[] }) {
                 >
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
-                      <p className="font-semibold text-misa-900">
+                      <p className="text-base font-semibold text-misa-900 sm:text-lg">
                         {e.cardName}
                       </p>
-                      <p className="text-sm text-accent">{e.cardParoki}</p>
-                      <p className="mt-1 text-xs text-misa-500">{e.cityName}</p>
+                      <p className="text-sm text-accent sm:text-base">{e.cardParoki}</p>
+                      <p className="mt-1 text-xs text-misa-500 sm:text-sm">{e.cityName}</p>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <SchedPill day="SAB" text={previewSabtu(e)} />

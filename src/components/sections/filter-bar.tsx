@@ -66,12 +66,12 @@ export function FilterBar({
           placeholder="Cari nama gereja, lokasi…"
           autoComplete="off"
           enterKeyHint="search"
-          className="w-full rounded-xl border border-black/8 bg-surface py-2.5 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none ring-accent/30 placeholder:text-misa-400 focus:border-accent focus:ring-2"
+          className="w-full rounded-xl border border-black/8 bg-surface py-2.5 pl-10 pr-3 text-sm text-misa-800 shadow-[var(--shadow-card)] outline-none ring-accent/30 placeholder:text-misa-400 focus:border-accent focus:ring-2 sm:text-base"
         />
       </div>
 
       <div>
-        <div className="mb-1 text-xs font-medium uppercase tracking-wider text-misa-400">
+        <div className="mb-1 text-xs font-medium uppercase tracking-wider text-misa-400 sm:text-sm">
           Wilayah &amp; tingkat data
         </div>
         <div
@@ -93,7 +93,7 @@ export function FilterBar({
       </div>
 
       <div>
-        <div className="mb-1 text-xs font-medium uppercase tracking-wider text-misa-400">
+        <div className="mb-1 text-xs font-medium uppercase tracking-wider text-misa-400 sm:text-sm">
           Waktu liturgi
         </div>
         <div
