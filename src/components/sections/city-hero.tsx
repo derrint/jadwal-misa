@@ -9,16 +9,16 @@ export function CityHero({
 }) {
   return (
     <header className="relative z-10 border-b border-black/8 bg-gradient-to-b from-accent/[0.06] to-transparent px-4 py-10 text-center sm:px-6">
-      <div className="mb-3 inline-flex items-center justify-center text-3xl text-accent drop-shadow-sm sm:text-4xl">
+      <div className="mb-3 inline-flex items-center justify-center text-4xl text-accent drop-shadow-sm">
         ✝
       </div>
-      <h1 className="font-serif text-3xl font-bold tracking-tight text-misa-800 sm:text-4xl">
+      <h1 className="font-serif text-4xl font-bold tracking-tight text-misa-800">
         Jadwal Misa <span className="text-accent">{meta.name}</span>
       </h1>
-      <p className="mt-2 text-sm font-normal uppercase tracking-[0.08em] text-misa-500 sm:text-base">
+      <p className="mt-2 text-base font-normal uppercase tracking-[0.08em] text-misa-500">
         {meta.description} — 2026
       </p>
-      <div className="mt-5 flex flex-wrap justify-center gap-3 text-xs text-misa-500 sm:text-sm">
+      <div className="mt-5 flex flex-wrap justify-center gap-3 text-sm text-misa-500">
         <span className="inline-flex items-center gap-2 rounded-full border border-black/8 bg-surface px-3 py-1 shadow-[var(--shadow-card)]">
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           <span id="parish-count-num">{parishCount}</span> Paroki

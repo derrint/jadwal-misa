@@ -80,14 +80,14 @@ export default function CityPageClient({
           />
 
           {countLine ? (
-            <p className="mb-3 pl-0.5 text-xs text-misa-500 sm:text-sm">
+            <p className="mb-3 pl-0.5 text-sm text-misa-500">
               {countLine}
             </p>
           ) : null}
 
           {visibleCount === 0 ? (
-            <div className="rounded-xl border border-black/8 bg-surface py-12 text-center text-sm text-misa-500 shadow-[var(--shadow-card)] sm:text-base">
-              <div className="mb-2 text-3xl sm:text-4xl" aria-hidden>
+            <div className="rounded-xl border border-black/8 bg-surface py-12 text-center text-sm text-misa-500 shadow-[var(--shadow-card)]">
+              <div className="mb-2 text-4xl" aria-hidden>
                 🔍
               </div>
               <p>Tidak ada gereja yang sesuai dengan pencarian.</p>

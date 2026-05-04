@@ -9,20 +9,20 @@ export function CityCard({ city }: { city: CityMeta }) {
     >
       <div className="flex items-start justify-between gap-2">
         <div>
-          <h2 className="font-serif text-lg font-bold text-misa-900 group-hover:text-accent sm:text-xl">
+          <h2 className="font-serif text-xl font-bold text-misa-900 group-hover:text-accent">
             {city.name}
           </h2>
-          <p className="mt-1 text-sm text-misa-500 sm:text-base">{city.province}</p>
-          <p className="mt-0.5 text-xs text-misa-400 sm:text-sm">{city.diocese}</p>
+          <p className="mt-1 text-base text-misa-500">{city.province}</p>
+          <p className="mt-0.5 text-sm text-misa-400">{city.diocese}</p>
         </div>
-        <span className="shrink-0 rounded-full bg-accent/10 px-2.5 py-1 text-xs font-semibold text-accent sm:text-sm">
+        <span className="shrink-0 rounded-full bg-accent/10 px-2.5 py-1 text-sm font-semibold text-accent">
           {city.parishCount} paroki
         </span>
       </div>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-misa-600 sm:text-base">
+      <p className="mt-3 flex-1 text-base leading-relaxed text-misa-600">
         {city.description}
       </p>
-      <span className="mt-4 text-sm font-semibold text-accent sm:text-base">
+      <span className="mt-4 text-base font-semibold text-accent">
         Lihat Jadwal →
       </span>
     </Link>

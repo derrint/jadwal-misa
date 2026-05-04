@@ -70,7 +70,7 @@ body {
   }
 
   .filter-btn-base {
-    @apply rounded-lg border border-black/8 bg-surface px-3 py-1.5 text-xs sm:text-sm
+    @apply rounded-lg border border-black/8 bg-surface px-3 py-1.5 text-sm
            font-semibold text-misa-500 shadow-[var(--shadow-card)]
            transition-all duration-150 whitespace-nowrap cursor-pointer;
   }
@@ -84,19 +84,19 @@ body {
   }
 
   .trust-badge-high {
-    @apply bg-trust-high/10 text-trust-high text-xs sm:text-sm font-bold px-2 py-0.5 rounded-md;
+    @apply bg-trust-high/10 text-trust-high text-sm font-bold px-2 py-0.5 rounded-md;
   }
 
   .trust-badge-med {
-    @apply bg-trust-med/10 text-trust-med text-xs sm:text-sm font-bold px-2 py-0.5 rounded-md;
+    @apply bg-trust-med/10 text-trust-med text-sm font-bold px-2 py-0.5 rounded-md;
   }
 
   .trust-badge-low {
-    @apply bg-trust-low/10 text-trust-low text-xs sm:text-sm font-bold px-2 py-0.5 rounded-md;
+    @apply bg-trust-low/10 text-trust-low text-sm font-bold px-2 py-0.5 rounded-md;
   }
 
   .section-label-row {
-    @apply flex items-center gap-3 my-6 mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.14em] text-accent;
+    @apply flex items-center gap-3 my-6 mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-accent;
   }
 
   .section-label-row::after {
@@ -107,7 +107,7 @@ body {
   }
 
   .note-box {
-    @apply rounded-lg border px-3 py-2.5 text-xs sm:text-sm leading-relaxed text-misa-600 mt-3;
+    @apply rounded-lg border px-3 py-2.5 text-sm leading-relaxed text-misa-600 mt-3;
     background: color-mix(in srgb, var(--color-misa-300) 12%, transparent);
     border-color: color-mix(in srgb, var(--color-misa-400) 25%, transparent);
   }
@@ -127,7 +127,7 @@ body {
   }
 
   .info-panel-site {
-    @apply rounded-xl border border-black/8 border-l-[3px] border-l-accent bg-surface p-4 mt-8 text-sm sm:text-base text-misa-600 leading-relaxed;
+    @apply rounded-xl border border-black/8 border-l-[3px] border-l-accent bg-surface p-4 mt-8 text-base text-misa-600 leading-relaxed;
   }
 
   .info-panel-site h3 {
