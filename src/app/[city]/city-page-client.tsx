@@ -80,7 +80,7 @@ export default function CityPageClient({
           />
 
           {countLine ? (
-            <p className="mb-3 pl-0.5 text-[0.72rem] text-misa-500">
+            <p className="mb-3 pl-0.5 text-xs text-misa-500">
               {countLine}
             </p>
           ) : null}

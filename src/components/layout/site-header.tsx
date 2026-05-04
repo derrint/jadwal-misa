@@ -10,11 +10,11 @@ export function SiteHeader({ title, subtitle, meta }: SiteHeaderProps) {
       <div className="cross-icon mb-3 inline-flex items-center justify-center text-3xl text-accent drop-shadow-sm">
         ✝
       </div>
-      <h1 className="font-serif text-[clamp(1.6rem,5vw,2.25rem)] font-bold tracking-tight text-misa-800">
+      <h1 className="font-serif text-3xl font-bold tracking-tight text-misa-800 sm:text-4xl">
         {title}
       </h1>
       {subtitle ? (
-        <p className="mt-2 text-[0.85rem] font-normal uppercase tracking-[0.08em] text-misa-500">
+        <p className="mt-2 text-sm font-normal uppercase tracking-[0.08em] text-misa-500">
           {subtitle}
         </p>
       ) : null}

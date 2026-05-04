@@ -84,19 +84,19 @@ body {
   }
 
   .trust-badge-high {
-    @apply bg-trust-high/10 text-trust-high text-[0.64rem] font-bold px-2 py-0.5 rounded-md;
+    @apply bg-trust-high/10 text-trust-high text-xs font-bold px-2 py-0.5 rounded-md;
   }
 
   .trust-badge-med {
-    @apply bg-trust-med/10 text-trust-med text-[0.64rem] font-bold px-2 py-0.5 rounded-md;
+    @apply bg-trust-med/10 text-trust-med text-xs font-bold px-2 py-0.5 rounded-md;
   }
 
   .trust-badge-low {
-    @apply bg-trust-low/10 text-trust-low text-[0.64rem] font-bold px-2 py-0.5 rounded-md;
+    @apply bg-trust-low/10 text-trust-low text-xs font-bold px-2 py-0.5 rounded-md;
   }
 
   .section-label-row {
-    @apply flex items-center gap-3 my-6 mb-3 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-accent;
+    @apply flex items-center gap-3 my-6 mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-accent;
   }
 
   .section-label-row::after {
@@ -107,7 +107,7 @@ body {
   }
 
   .note-box {
-    @apply rounded-lg border px-3 py-2.5 text-[0.75rem] leading-relaxed text-misa-600 mt-3;
+    @apply rounded-lg border px-3 py-2.5 text-xs leading-relaxed text-misa-600 mt-3;
     background: color-mix(in srgb, var(--color-misa-300) 12%, transparent);
     border-color: color-mix(in srgb, var(--color-misa-400) 25%, transparent);
   }

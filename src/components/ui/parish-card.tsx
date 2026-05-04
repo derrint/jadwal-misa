@@ -8,7 +8,7 @@ import { TrustBadge } from "@/components/ui/trust-badge";
 
 function TimeRow({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-center gap-2 text-[0.82rem] text-misa-800">
+    <div className="flex items-center gap-2 text-sm text-misa-800">
       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
       {children}
     </div>
@@ -67,19 +67,19 @@ export function ParishCard({ parish: p }: { parish: Parish }) {
             ⛪
           </div>
           <div className="min-w-0 flex-1">
-            <h2 className="font-serif text-[0.98rem] font-semibold leading-snug text-misa-900">
+            <h2 className="font-serif text-base font-semibold leading-snug text-misa-900">
               {p.cardName}
             </h2>
-            <p className="mt-0.5 text-[0.72rem] font-medium tracking-wide text-accent">
+            <p className="mt-0.5 text-sm font-medium tracking-wide text-accent">
               {p.cardParoki}
             </p>
-            <p className="mt-1 text-[0.73rem] text-misa-500">{p.location}</p>
+            <p className="mt-1 text-xs text-misa-500">{p.location}</p>
           </div>
         </div>
         <div className="flex shrink-0 flex-col items-end gap-2">
           <TrustBadge trust={p.trust} />
           <span
-            className="text-[0.75rem] text-misa-400 transition-transform duration-300"
+            className="text-xs text-misa-400 transition-transform duration-300"
             style={{ transform: open ? "rotate(180deg)" : undefined }}
           >
             ▼
@@ -102,7 +102,7 @@ export function ParishCard({ parish: p }: { parish: Parish }) {
             {!p.noSchedule ? (
               <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <div className="rounded-[10px] border border-black/8 bg-misa-50/80 p-3">
-                  <div className="mb-2 flex items-center gap-1 text-[0.65rem] font-semibold uppercase tracking-wide text-accent">
+                  <div className="mb-2 flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-accent">
                     🕯 Misa Sabtu
                   </div>
                   <div className="flex flex-col gap-1">
@@ -110,7 +110,7 @@ export function ParishCard({ parish: p }: { parish: Parish }) {
                   </div>
                 </div>
                 <div className="rounded-[10px] border border-black/8 bg-misa-50/80 p-3">
-                  <div className="mb-2 flex items-center gap-1 text-[0.65rem] font-semibold uppercase tracking-wide text-accent">
+                  <div className="mb-2 flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-accent">
                     ☀️ Misa Minggu
                   </div>
                   <div className="flex flex-col gap-1">
@@ -133,7 +133,7 @@ export function ParishCard({ parish: p }: { parish: Parish }) {
                 {p.sources.map((t) => (
                   <span
                     key={t}
-                    className="inline-flex items-center gap-1 rounded-md border border-black/8 bg-misa-50 px-2 py-1 text-[0.72rem] text-misa-500"
+                    className="inline-flex items-center gap-1 rounded-md border border-black/8 bg-misa-50 px-2 py-1 text-xs text-misa-500"
                   >
                     {t}
                   </span>

@@ -71,7 +71,7 @@ export function FilterBar({
       </div>
 
       <div>
-        <div className="mb-1 text-[0.68rem] font-medium uppercase tracking-wider text-misa-400">
+        <div className="mb-1 text-xs font-medium uppercase tracking-wider text-misa-400">
           Wilayah &amp; tingkat data
         </div>
         <div
@@ -93,7 +93,7 @@ export function FilterBar({
       </div>
 
       <div>
-        <div className="mb-1 text-[0.68rem] font-medium uppercase tracking-wider text-misa-400">
+        <div className="mb-1 text-xs font-medium uppercase tracking-wider text-misa-400">
           Waktu liturgi
         </div>
         <div
