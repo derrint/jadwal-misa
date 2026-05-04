@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jadwal Misa Indonesia
 
-## Getting Started
+A static, fast directory of **Catholic Mass schedules** across Indonesia. Browse by city, search parishes, and filter by area — built with [Next.js](https://nextjs.org), React, and TypeScript.
 
-First, run the development server:
+## Features
+
+- **Home** — Search across all indexed parishes; jump to a city from the region grid.
+- **City pages** (`/[city]`) — Parish cards with Saturday / Sunday times, optional weekday notes, sources, and trust indicators.
+- **Filters** — Narrow results by deanery / area where the dataset provides labels.
+
+Schedule data is stored as JSON and shipped with the app (no database required).
+
+## Tech stack
+
+- **Framework:** Next.js (App Router)
+- **UI:** React, Tailwind CSS
+- **Language:** TypeScript
+
+## Getting started
+
+Requirements: **Node.js** (LTS recommended).
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command   | Description           |
+| --------- | --------------------- |
+| `npm run dev`    | Development server    |
+| `npm run build`  | Production build      |
+| `npm run start`  | Run production server |
+| `npm run lint`   | ESLint                |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Data & adding a city
 
-## Learn More
+1. **Register the city** in [`src/data/index.json`](src/data/index.json) (`id`, `name`, `province`, `diocese`, `file`, etc.).
+2. **Add a dataset file** (e.g. `src/data/<city>.json`) matching the shape in [`src/types/parish.ts`](src/types/parish.ts) (`CityData` with a `parishes` array).
 
-To learn more about Next.js, take a look at the following resources:
+The home search index is built from every city listed in `index.json` via dynamic imports in [`src/lib/build-search-index.ts`](src/lib/build-search-index.ts).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Accuracy & corrections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Schedules are compiled for convenience and may change without notice. For authoritative times and pastoral notices, always confirm with the **local parish** or official parish channels.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed like any Next.js app (e.g. [Vercel](https://vercel.com/docs/frameworks/nextjs)). See the [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying) for details.
